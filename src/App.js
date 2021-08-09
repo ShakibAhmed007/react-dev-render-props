@@ -11,7 +11,7 @@ export default function App() {
       <p> Similar Functional Component should be reused </p>
       <ClickCounter />
       <HoverCounter />
-      <User name={isLoggedIn => (isLoggedIn ? 'Shakib' : 'Guest')} />
+      <User render={isLoggedIn => (isLoggedIn ? 'Shakib' : 'Guest')} />
     </div>
   );
 }

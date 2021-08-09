@@ -1,8 +1,8 @@
 import React from 'react';
 
 const User = props => {
-  const func = props.name;
-  return func(false);
+  const { render } = props;
+  return render(false);
 };
 
 export default User;
