@@ -1,5 +1,4 @@
 import React from 'react';
-import withCounter from './HOC/withCounter';
 
 class HoverCounter extends React.Component {
   render() {

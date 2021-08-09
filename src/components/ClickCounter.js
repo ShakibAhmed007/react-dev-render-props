@@ -1,5 +1,4 @@
 import React from 'react';
-import withCounter from './HOC/withCounter';
 
 class ClickCounter extends React.Component {
   render() {
