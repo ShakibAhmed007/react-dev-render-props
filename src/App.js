@@ -9,9 +9,12 @@ export default function App() {
     <div>
       <h1>Render Props</h1>
       <p> Similar Functional Component should be reused </p>
+      <p> User component is an example of Render props </p>
+      <User render={isLoggedIn => (isLoggedIn ? 'Shakib' : 'Guest')} />
+      <br />
+      <br />
       <ClickCounter />
       <HoverCounter />
-      <User render={isLoggedIn => (isLoggedIn ? 'Shakib' : 'Guest')} />
     </div>
   );
 }
