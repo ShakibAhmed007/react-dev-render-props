@@ -2,6 +2,7 @@ import React from 'react';
 import './style.css';
 import ClickCounter from './components/ClickCounter';
 import HoverCounter from './components/HoverCounter';
+import User from './components/User';
 
 export default function App() {
   return (
@@ -10,6 +11,7 @@ export default function App() {
       <p> Similar Functional Component should be reused </p>
       <ClickCounter />
       <HoverCounter />
+      <User name={isLoggedIn => (isLoggedIn ? 'Shakib' : 'Guest')} />
     </div>
   );
 }
