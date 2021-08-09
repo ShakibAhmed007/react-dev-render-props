@@ -3,6 +3,7 @@ import './style.css';
 import ClickCounter from './components/ClickCounter';
 import HoverCounter from './components/HoverCounter';
 import User from './components/User';
+import Counter from './components/Counter';
 
 export default function App() {
   return (
@@ -13,8 +14,18 @@ export default function App() {
       <User render={isLoggedIn => (isLoggedIn ? 'Shakib' : 'Guest')} />
       <br />
       <br />
-      <ClickCounter />
-      <HoverCounter />
+
+      <Counter
+        render={(counter, incrementCount) => (
+          <ClickCounter count={counter} incrementCount={incrementCount} />
+        )}
+      />
+
+      <Counter
+        render={(counter, incrementCount) => (
+          <HoverCounter count={counter} incrementCount={incrementCount} />
+        )}
+      />
     </div>
   );
 }
